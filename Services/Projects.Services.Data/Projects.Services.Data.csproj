@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+		<LangVersion>latest</LangVersion>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Data\Projects.Data\Projects.Data.csproj" />
+	  <ProjectReference Include="..\..\Projects.Common\Projects.Common.csproj" />
+	  <ProjectReference Include="..\Projects.Services.Mapping\Projects.Services.Mapping.csproj" />
+	  <ProjectReference Include="..\Projects.Services.Models\Projects.Services.Models.csproj" />
+	</ItemGroup>
+
+</Project>

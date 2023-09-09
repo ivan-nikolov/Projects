@@ -1,0 +1,17 @@
+﻿namespace Projects.Web.Models
+{
+    using Projects.Data.Models;
+    using Projects.Services.Mapping;
+    using Projects.Services.Models.Users;
+
+    public class UserViewModel : IMapFrom<User>, IMapFrom<UserViewModel>
+    {
+        public int Id { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public string Email { get; set; }
+    }
+}

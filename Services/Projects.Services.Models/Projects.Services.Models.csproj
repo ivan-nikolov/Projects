@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+		<LangVersion>latest</LangVersion>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Data\Projects.Data.Models\Projects.Data.Models.csproj" />
+	  <ProjectReference Include="..\Projects.Services.Mapping\Projects.Services.Mapping.csproj" />
+	</ItemGroup>
+</Project>

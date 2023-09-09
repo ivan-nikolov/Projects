@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\Projects.Data\Projects.Data.csproj" />
+    <ProjectReference Include="..\..\Services\Projects.Services.Data\Projects.Services.Data.csproj" />
+    <ProjectReference Include="..\Projects.Web.Infrastructure\Projects.Web.Infrastructure.csproj" />
+    <ProjectReference Include="..\Projects.Web.Models\Projects.Web.Models.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+</Project>

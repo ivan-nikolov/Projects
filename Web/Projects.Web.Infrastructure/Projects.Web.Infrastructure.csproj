@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+		<LangVersion>latest</LangVersion>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.31" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.32" />
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.32" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Data\Projects.Data\Projects.Data.csproj" />
+	  <ProjectReference Include="..\..\Services\Projects.Services.Data\Projects.Services.Data.csproj" />
+	  <ProjectReference Include="..\..\Services\Projects.Services.Mapping\Projects.Services.Mapping.csproj" />
+	</ItemGroup>
+
+</Project>
